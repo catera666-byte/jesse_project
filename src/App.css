@@ -1,0 +1,24 @@
+.main-stage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Keeps her feet on the floor */
+  
+  /* THIS IS THE BRIDGE */
+  background-image: url('/bridge_background.jpg'); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.realist-model {
+  /* THIS IS THE GIRL */
+  height: 90vh; /* Adjust this so she fits inside the bridge */
+  width: auto;
+  z-index: 10; /* Ensures she stays in front of the bridge */
+  object-fit: contain;
+  
+  /* Filter to make her skin react to the red bridge lights */
+  filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.6)) brightness(1.2);}
